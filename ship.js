@@ -33,21 +33,3 @@ function ship(num) {
 }
 
 console.log(ship(3))
-
-// function segitigaSamaSisi(num) { 
-//     let segitiga = "";
-//     for(let i = 1; i <= num; i++){ 
-//         for(let j = 1; j <= num-i; j++){ 
-//             segitiga += " "; 
-//         } 
-//         for (let j = 1; j < 2*i; j++) {
-//             if (j%2 == 0) {
-//                 segitiga += "o";   
-//             } else {
-//                 segitiga += "x";
-//             }
-//         }
-//         segitiga += "\n"; 
-//     } 
-//     console.log(segitiga);
-// }
