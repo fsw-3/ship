@@ -8,7 +8,7 @@ const ship = (input) => {
       result += " ";
     }
     // Add '*' to result
-    for (let x = 0; x < 2 * input - (2 * input - 2 * i - 1); x++) {
+    for (let x = 0; x < 1 + 2 * i; x++) {
       result += "*";
     }
     result += "\n";
