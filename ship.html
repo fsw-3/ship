@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // output
+        // -------*         ()
+        // ------*** 
+        // -----***** 
+        // *************** 
+        // --***********  
+        // ----*******   
+        // function star(num) {
+            let string = "";
+            let num = 2
+            let nilai;
+            // for (let i = 1; i <= num; i++) {
+                //eksternal looping, jumlah baris sebanyak 2 kali num
+                for (let j = 1; j <= num * 2; j++) {
+                    if (j <= 2) {
+                        for (let k = 0; k <= num - j+2; k++) {
+                            string += "-";
+                        }
+                        for (let l = 1; l <= 2 * j - 1; l++) {
+                            string += "*";
+                            // console.log(l);
+                            nilai = l;
+                        }
+                        string += "\n";
+                    }
+                    else if (j > num) {
+                        for (let l = 0; l < j-num-1; l++) {
+                            string += "-";
+                        }
+                        for (let k = 0; k <= nilai*3-1; k++) {
+                            string += "*";
+                        }
+                        string += "\n"; 
+                    }
+                }
+                console.log(string);
+            // }
+        //     return string;
+        // }
+        // star(2);
+    </script>
+</body>
+</html>
