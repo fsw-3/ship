@@ -17,19 +17,19 @@ function ship(num) {
         }
         star += "\n";
     }
+
     for (l = 1; l <= num; l++) {
         for (m = 0; m < l; m++) {
             star += " ";
         }
-        for (n = (k-1)*3; n >= l+4; n--) {
+        for (n = (k-1)*3; n >= l; n--) {
             star += "*";
-            
         }
+        k--;
         star += "\n";
-        
     }
 
     return star;
 }
 
-console.log(ship(3))
+console.log(ship(4))
