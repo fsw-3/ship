@@ -1,13 +1,13 @@
 function ship(star) {
   let string = "";
   //   looping bagian ats ship
-  for (let i = 1; i <= star; i++) {
+  for (let i = 0; i < star; i++) {
     // printing spaces
-    for (let j = 1; j <= star - i; j++) {
+    for (j = 0; j < 3 * star - 2 - i; j++) {
       string += " ";
     }
     // printing star
-    for (let k = 0; k < 2 * i - 1; k++) {
+    for (let k = 0; k < 1 + 2 * i; k++) {
       string += "*";
     }
     string += "\n";
@@ -24,7 +24,7 @@ function ship(star) {
     }
     string += "\n";
   }
-  console.log(string);
+  return string;
 }
 
 console.log(ship(1));
