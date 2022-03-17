@@ -8,9 +8,9 @@
 </head>
 <body>
     <script>
-        function segitigasamakaki(panjang) {
+        function ship(num) {
         let hasil = '';
-        let tinggi = panjang + 1;
+        let tinggi = num + 1;
 
             for (let i = 1; i <= tinggi; i++) {
                 for (let j = 1; j <= tinggi-i; j++) {
@@ -25,7 +25,7 @@
             }
             return hasil;
         }
-        console.log(segitigasamakaki(2));
+        console.log(ship(2));
         
     </script>
 </body>
