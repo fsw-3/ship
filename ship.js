@@ -33,9 +33,9 @@ function ship(value){
   for(let k=1; k<value; k++){
     stars = starsButtom.substring(0, starsButtom.length-4); // mengurangi jumlah stars
     starsButtom = stars; // mengcopy data stars ke starsButtom
-    spacesButtom += ' '; // menambahkan spasi pada starsButtom
+    spacesButtom += ' '; // menambahkan spasi pada spacesButtom
     console.log(spacesButtom, starsButtom); // menampilkan spacesButtom dan starsButtom
-    spacesButtom += ' '; // menambahkan spasi pada starsButtom
+    spacesButtom += ' '; // menambahkan spasi pada spacesButtom
   }
 }
   
