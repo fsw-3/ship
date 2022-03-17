@@ -2,7 +2,7 @@ function ship(number) {
   // variable penampung *
   let result = "";
   // looping bagian atas ship
-  for (let i = 0; i <= number; i++) {
+  for (let i = 1; i <= number; i++) {
     for (let j = 1; j <= 3 * number - i; j++) {
       result += " ";
     }
@@ -10,6 +10,7 @@ function ship(number) {
     for (let k = 0; k < i * 2 - 1; k++) {
       result += "*";
     }
+
     result += "\n";
   }
   // looping bagian bawah ship
