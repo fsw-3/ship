@@ -31,4 +31,7 @@ function ship(number) {
     console.log(result);
 }
 
+ship(1);
 ship(2);
+ship(3);
+ship(4);
