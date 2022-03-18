@@ -15,10 +15,10 @@ function shipStar(star){
     }
 
     for(let i = 0; i < star; i++){
-        for(let j = 1; j <= i; j++){
+        for(let j = 1; j <= i * 2; j++){
             result += ' ';
         }
-        for(let k = 1; k <= 6 * star - 3 - i; k++){
+        for(let k = 0; k < 3 * (star * 2 - i) - 3 ; k++){
             result += '*';
         }
         result += '\n';
@@ -28,4 +28,4 @@ function shipStar(star){
 console.log(shipStar(1));
 console.log(shipStar(2));
 // console.log(shipStar(3));
-// console.log(shipStar(4));
+// console.log(shipStar(4))
