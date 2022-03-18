@@ -1,23 +1,24 @@
 function ship(stars) {
     let result = "";
-    for (let i = 0; i <= stars; i++) {  
-        for (let j = 0; j <= stars-i; j++) {
+    //i loop baris & kolom
+    for (let i = 0; i <=stars*2; i++) {  
+        for (let j = 0; j <= stars*2-i; j++) {
             result += ' ';
         }
-        for (let k = 0; k < i * 2-1; k++) {
+        for (let k = 0; k < i*2-1; k++) {
+            result += '*';
+        } 
+        result += '\n';
+    }
+    for (let i = 0; i <= stars; i++) {
+        for (let k = 0; k < i*2; k++) {
             result += '*';
         }
         result += '\n';
     }
-    // start bawah
-    // for (let i = 0; i <= stars-1; i++) {
-    //     for (let  k = 0; k< i * 2 -1; k--){
-    //         if ( k % 3 == 0) {
-    //             result += '';
-    //         }
-    //     }
-    //     result += '\n';
-    // }
-    return result;
+    console.log(result);
 }
-console.log(ship(4));
+ship(1);
+ship(2);
+ship(3);
+ship(4);
