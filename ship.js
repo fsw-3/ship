@@ -1,7 +1,5 @@
 function ship(stars) {
     let result = "";
-    // jika i = 0 kemudian i <= (2 x 2) -1 dimulai dari 0 maka kurang 1
-
     for (let i = 0; i <= stars; i++) {  
         for (let j = 0; j <= stars-i; j++) {
             result += ' ';
