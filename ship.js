@@ -1,17 +1,30 @@
 function ship(star) {
   let string = "";
-  //   looping bagian ats ship
+  // membuat looping  bagian atas
   for (let i = 0; i < star; i++) {
-    // printing spaces
-    for (let j = 0; j <= star - i; j++) {
+    // menambahkan spasi ke string
+    for (let j = 0; j < star * 3 - 2 - i; j++) {
       string += " ";
     }
-    // printing star
-    for (let k = 0; k < 2 * i - 1; k++) {
+    // Add '*' tostring
+    for (let x = 0; x < 1 + 2 * i; x++) {
       string += "*";
     }
     string += "\n";
   }
+  // membuat looping bagian bawah
+  for (let i = 0; i <= star - 1; i++) {
+    //menambahkan spasi ke string
+    for (let j = 1; j <= 2 * i; j++) {
+      string += " ";
+    }
+    // printing star
+    for (let k = 0; k < (star * 2 - i) * 3 - 3; k++) {
+      string += "*";
+    }
+    string += "\n";
+  }
+
   return string;
 }
 
