@@ -23,9 +23,7 @@ for (let t = 0;  t < n; t++) {
         kosong1+="*";
     }
     s-=3;
-    kosong1+='\n'
+    kosong1+='\n';
 }
-return kosong+kosong1
+return kosong+kosong1;
 }
-
-console.log(kapal(9));
