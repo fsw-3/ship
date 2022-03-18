@@ -6,7 +6,7 @@ function ship(star) {
     for (let j = 0; j < star * 3 - 2 - i; j++) {
       string += " ";
     }
-    // Add '*' tostring
+    // menambahkan * to string
     for (let x = 0; x < 1 + 2 * i; x++) {
       string += "*";
     }
@@ -18,7 +18,7 @@ function ship(star) {
     for (let j = 1; j <= 2 * i; j++) {
       string += " ";
     }
-    // printing star
+    // menambahkan * to string
     for (let k = 0; k < (star * 2 - i) * 3 - 3; k++) {
       string += "*";
     }
@@ -27,7 +27,7 @@ function ship(star) {
 
   return string;
 }
-
+//menampilkan ship dengan console log
 console.log(ship(1));
 console.log(ship(2));
 console.log(ship(3));
