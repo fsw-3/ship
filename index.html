@@ -10,7 +10,29 @@
 
 <body>
     <script>
-
+        function kapal(angka) {
+            let tampung = '';
+            for (let i = 1; i <= angka; i++) {
+                for (let j = angka; j >= i; j--) {
+                    tampung += " ";
+                }
+                for (let k = 1; k <= i + (i - 1); k++) {
+                    tampung += "*";
+                }
+                tampung += "\n";
+            }
+            for (let i = 1; i <= angka; i++) {
+                for (let j = 1; j <= i - 1; j++) {
+                    tampung += " ";
+                }
+                for (let k = angka; k >= (2 * i - angka) - 2; k--) {
+                    tampung += "*";
+                }
+                tampung += "\n";
+            }
+            return tampung;
+        }
+        console.log(kapal(5));
     </script>
 </body>
 
