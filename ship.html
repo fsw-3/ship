@@ -9,23 +9,39 @@
 <body>
     <script>
         function ship(num) {
+
         let hasil = '';
-        let tinggi = num + 1;
+        let tinggi = num;
 
             for (let i = 1; i <= tinggi; i++) {
-                for (let j = 1; j <= tinggi-i; j++) {
+                for (let j = 1; j <= tinggi+4-i; j++) {
                     hasil += ' '    
                 }
                 for (let k = 1; k <= 2*i-1; k++) {
 
-                        hasil += '*';
+                    hasil += '*';
                 }
                 
                 hasil += '\n'
+                
             }
+
+            for (let i = tinggi; i >= 1 ; i--) {
+                for (let j = tinggi-i; j >= 1; j--) {
+                    hasil += ' '    
+                }
+                for (let k = 2*i+7; k >= 1 ; k--) {
+
+                    hasil += '*';
+                }
+                
+                hasil += '\n'
+                
+            }
+            
             return hasil;
         }
-        console.log(ship(2));
+        console.log(ship(6));
         
     </script>
 </body>
