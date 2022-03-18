@@ -10,15 +10,15 @@ let num = param1;
         }
         result += "\n"
     }
-    // for (let l = 1; l <= num; l++) {
-    //     for (let m = 1; m <= l; m++) {
-    //         result += " ";
-    //     }
-    //     for (let n = 1; n <= num+4-l; n++) {
-    //         result += "*";
-    //     }
-    //     result += "\n"
-    // }
+    for (let l = 1; l <= num; l++) {
+        for (let m = 1; m <= l; m++) {
+            result += " ";
+        }
+        for (let n = 1; n <= num+15-l; n++) {
+            result += "*";
+        }
+        result += "\n"
+    }
     return result;
 }
 console.log(ship(3));
