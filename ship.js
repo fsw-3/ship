@@ -8,7 +8,7 @@ function ship(num) {
     let n;
 
     for (i = 1; i <= num; i++) {
-        for (j = 1; j <= (num*num)-i; j++) {
+        for (j = 1; j <= (num*3+1)-i; j++) {
             star += " ";
         }
         for (k = 1; k < 2*i; k++) {
@@ -19,7 +19,7 @@ function ship(num) {
     }
 
     for (l = 1; l <= num; l++) {
-        for (m = 0; m < l; m++) {
+        for (m = 0; m < l*2; m++) {
             star += " ";
         }
         for (n = (k-1)*3; n >= l; n--) {
@@ -32,4 +32,4 @@ function ship(num) {
     return star;
 }
 
-console.log(ship(4))
+console.log(ship(1));
